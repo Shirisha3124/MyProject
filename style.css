@@ -1,0 +1,210 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+html {
+  font-size: 10px;
+  background-color: white;
+}
+body {
+  width: 90%;
+  min-width: 800px;
+  margin: 0 auto;
+  color: aqua;
+}
+
+h1 {
+  font-family: "Cinzel Decorative", cursive;
+  color: red;
+}
+h1 {
+  font-size: 6rem;
+  text-align: center;
+  text-shadow: 4px 4px 13px black;
+}
+h2 {
+  font-size: 5rem;
+  text-align: left;
+  color: purple;
+}
+
+header {
+  margin-bottom: 8px;
+  display: flex;
+  flex-flow: row wrap;
+  color: red;
+}
+
+.firstL {
+  grid-column-start: 1;
+}
+
+.secondL {
+  padding-left: 40px;
+}
+.thirdL {
+  padding-left: 70px;
+}
+.lastL {
+  padding-left: 100px;
+}
+
+body > * {
+  padding: 7%;
+}
+
+main header nav aside {
+  background-color: white;
+  padding: 2%;
+}
+
+h1 {
+  flex: 5;
+  text-transform: uppercase;
+}
+header img {
+  display: block;
+  height: 60px;
+  padding-top: 20.15px;
+}
+nav {
+  height: 50px;
+  flex: 100%;
+  display: flex;
+}
+nav ul {
+  padding: 5;
+  list-style-type: none;
+  flex: 2;
+  display: flex;
+  color: blue;
+}
+nav li {
+  display: inline;
+  text-align: center;
+  flex: 1;
+}
+nav a,
+nav span {
+  display: inline-block;
+  font-size: 3rem;
+  height: 3rem;
+  line-height: 1.7;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+main {
+  display: flex;
+}
+
+aside {
+  flex: 1;
+  margin-left: 20px;
+  padding: 1px;
+}
+
+aside a {
+  display: block;
+  float: left;
+  width: 500%;
+}
+
+aside img {
+  max-width: 100%;
+}
+
+
+.imgbox {
+  float: right;
+  border: 1px dotted rgb(195, 72, 72);
+  margin: 0px 0px 0px 10px;
+}
+.h-primary center {
+  font-size: 3.8rem;
+  padding: 5px;
+}
+.services {
+  max-width: 1000px;
+  margin: auto;
+  background-color: rgb(35, 36, 36);
+  overflow: auto;
+}
+.box {
+  border: 4px solid brown;
+  padding: 12px;
+  margin-left: 30px;
+  margin-right: 40px;
+  float: left;
+  border-radius: 5px;
+  width: 46%;
+}
+.box image {
+  display: inline;
+  padding: 7px;
+  margin: 0px auto;
+  padding: 3px;
+}   
+.Services {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20px;
+  color: black;
+  padding-top: 70px;
+}
+
+.item {
+ 
+  font-size: larger;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  letter-spacing: 3px;
+  line-height: 20px;
+  padding-top: 20px;
+  
+}
+
+.item1 {
+  float: right;
+  font-size: larger;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  letter-spacing: 2px;
+  line-height: 30px;
+  padding-top: 20px;
+}
+span {
+  color: red;
+}
+
+  .container{
+  background-color:beige ;
+  display: flex;
+  justify-content: space-between;
+  padding-top: 5px;
+  width: 100%;
+  margin: 3rem auto;
+  height: 500px;
+}
+.img_cont{
+  padding-top: 50px;
+  padding-left: 5px;
+  height: 250px;
+  float:left;
+  width: max-content;
+  margin:0px auto;
+
+}
+.content h2{
+  font-size: 60px;
+  color:rgb(158, 76, 229);
+  text-align: center;
+  padding-top: 1px;
+
+}
+.content p{
+  padding-left: 20px;
+  color: black;
+  font-size:xx-large;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  text-align: justify;
+}
+</body>
+</html>
