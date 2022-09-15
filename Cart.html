@@ -1,6 +1,172 @@
 <!DOCTYPE html>
 <html lang="en">
+<head>
+<meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+      .dashboard-order{
+        width: 500px;
+        min-height: 100%;
+        position: fixed;
+        top:0;
+        text-align: center;
+        padding-left: 30%;
+        background-color: var(--mainColor);
+        z-index: 3;
+        text-transform: uppercase;
+       
+      }
+      .dashboard-order > h1{
+        color: blue;
+      }
+      .order-address > h3{
+        line-height: 2px;
+        text-transform: uppercase;
+        color: crimson;
+      }
+      .order-wrapper{
+        height: 180px;
+        width: 100%;
+        overflow-y: scroll;
+        margin: 20px 0px;
 
-    <head>
+      }
+      .order-wrapper::-webkit-scrollbar{
+        width: 7px;
+      }
+      .order-wrapper::-webkit-scrollbar-track{
+        background-color: lightslategray;
+        border-radius: 20px 0px;
+      }
+      .order-wrapper::-webkit-scrollbar-thumb{
+        background-color: darkslategray;
+        border-radius: 20px;
+
+      }
+      .order-card{
+        display: grid;
+        grid-template-columns: 0.6fr 1fr 0.5fr;
+        padding: 10px 0;
+        gap: 5px;
+        justify-content: space-around;
+        align-items: flex-start;
+
+      }
+      .order-image{
+        width: 70px;
+        height: 70px;
+        object-fit: cover;
+        border-radius: 15px;
+      }
+      .order-detail > input {
+        width: 35px;
+        height: 35px;
+        text-align: center;
+        border: 2px solid lightgrey;
+        border-radius: 10px;
+        background-color: transparent;
+        margin-left: 10px;
+      }
+      hr.divider {
+        width: 100%;
+        border: 1px dashed darkgrey;
+
+      }
+      .order-total > p{
+        padding: 5px 0%;
+
+      }
+      .order-total >p>span{
+        padding-right: 8%;
+        float:right;
+        font-weight: 600px;
+      }
+      .checkout {
+        width: 100px;
+        height: 40px;
+        text-align: center;
+        background-color: red;
+        border: none;
+        border-radius: 20px;
+        color:lightgrey;
+        cursor: pointer;
+      }
+      .checkout:hover {
+        font-weight: 600px;
+      }  
+
+     </style>
+     </head>
+      <body>
+    <div class="dashboard-order">
+        <h1><b>shopping cart</b></h1>
+        <div class="order-address">
+        <p>Delivery Address</p>
+        <h3>214 Baker Street, Canada</h3>  
+      </div>
+      <div class="order-wrapper">
+        <div class="order-card">
+        <img class="order-image" src="images2.jpg">
+            <div class="order-detail">
+                <p>chicken biryani full box</p>
+                <i class="fas fa-times"></i><input type="text" value="1">
+      </div>
+      <h4 class="order-price">$17.99</h4>
+      </div>
+      <div class="order-card">
+        <img class="order-image" src="image4.jpg">
+            <div class="order-detail">
+                <p>Mutton biryani full box</p>
+                <i class="fas fa-times"></i><input type="text" value="2">
+      </div>
+      <h4 class="order-price">$17.99</h4>
+      </div>
+      <div class="order-card">
+        <img class="order-image" src="images5.jpg">
+            <div class="order-detail">
+                <p>Veg biryani full box</p>
+                <i class="fas fa-times"></i><input type="text" value="2">
+      </div>
+      <h4 class="order-price">$9.99</h4>
+      </div>
+      <div class="order-card">
+        <img class="order-image" src="image6.jpg">
+            <div class="order-detail">
+                <p>Veg biryani full box</p>
+                <i class="fas fa-times"></i><input type="text" value="2">
+      </div>
+      <h4 class="order-price">$17.99</h4>
+      </div>
+      <div class="order-card">
+        <img class="order-image" src="image9.jpg">
+            <div class="order-detail">
+                <p>Beef biryani</p>
+                <i class="fas fa-times"></i><input type="text" value="2">
+      </div>
+      <h4 class="order-price">$14.99</h4>
+      </div>
+      <div class="order-card">
+        <img class="order-image" src="image8.jpg">
+            <div class="order-detail">
+                <p>Mint sauce/Raita</p>
+                <i class="fas fa-times"></i><input type="text" value="2">
+      </div>
+      <h4 class="order-price">$0.79</h4>
+      </div>
+      </div>
+          
+      <hr class="divider">
+      <div class="order-total">
+         <p>Subtotal<span>$45.97</span></p>
+         <p>Tax (10%)<span>$4.59</span></p>
+         <p>Delivery Fee<span>$3.00</span></p>
+         <p>Total<span>$53.50</span></p>
+      
+      </div>
+      <button class="checkout">Checkout</button>
+        </body>
+        </html>
+        <head>
         <style>
   
