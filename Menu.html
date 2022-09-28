@@ -1,92 +1,109 @@
-<!DOCTYPE html>
+!DOCTYPE html>
 <html lang="en">
     <head>
+      <meta charset="UTF-8" />
+      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Menu</title>
+    
     <style>
+
+
+            .Service-item h1{
+              text-transform: uppercase;
+              font-size: 40px;
+              color:brown;
+              text-shadow: 0 0 3px #FF0000;
+            }
      
-            .Service-item > h1{
-              padding-left: 20%;
+            .Service-item1 h1{
+              text-transform: uppercase;
+              padding-left: 30%;
               padding-top: 25px;
               position: absolute;
               top: 85px;
-              color: rgb(89, 5, 12);
-
+              color: red;
+              text-shadow: 0 0 3px #FF0000;
+              font-size: 35px;
             }
-     
-                  .services {
-                    position: absolute;
-                    top: 5px;
-                    margin: 20%;
-                    background-color: rgb(182, 245, 182);
-                    overflow: auto;
+    
+                   .services {
+                    display: grid;
+                    grid-template-columns: repeat(2, 250px);
+                    gap: 100px;
+                    justify-content: center;
+                    padding-top: 7%;  
+                    margin-bottom: 40px;
                    
                   }
-                  .box {
-                    border: 3px solid brown;
+                  .box { 
+                    display: grid;  
+                    border: 5px solid brown;
                     padding: 1px;
-                    margin-left: 40px;
-                    float: left;
+                    padding-bottom: 10px;
+                    width: 108%;
                     border-radius: 3px;
-                    width: 40%;
+                    text-transform: uppercase;
+                    font-size: 20px;
+                   
                   }
-                  .box >image {
-                    display: block;
-                    
-                    margin: 0px auto;
-                    padding-left: 5px;
-                  }   
+                  .box >p{
+                    font-size: large;
+                  }
+                  
     </style> 
     </head>
     
     <body>
-    
-      <h1 style="text-align:center": font-color="brown">ONLINE ORDER</h1>
-      <div class="Service-item">
-      <h1  style="float:right">BIRYANI DISHES</h1> 
+      <div class="Service-item">     
+      <h1 style="text-align:center": font-color="brown">online order</h1>
+      </div>
+      <div class="Service-item1">
+      <h1  style="float:right">biryani dishes</h1> 
       </div> 
         
          <div class="services">
           <div class="box">
-             <img src="images.jpg" width="300" height="300" />
-             <p id="item-name">CHICKEN BIRYANI SINGLE BOX</p>
+             <img src="images.jpg" width="270" height="270" />
+             <p id="item-name"><b>chicken biryani single box</b></p>
              <p id="item-price">Price: $9.99</p>
             </div>
              <div class="box">
-               <img src="images2.jpg" width="300" height="300" />
-               <p id="item-name">CHICKEN BIRYANI FULL BOX</p>
+               <img src="images2.jpg" width="270" height="270" />
+               <p id="item-name"><b>chicken biryani full box</b></p>
                  <p id="item-price">Price: $15.99</p>
                 </div>
                  <div class="box">
-                  <img src="images.jpg" width="300" height="300" />
-                   <p id="item-name">MUTTON BIRYANI SINGLE BOX</p>
+                  <img src="images.jpg" width="270" height="270" />
+                   <p id="item-name"><b>mutton biryani single box</b></p>
                     <p id="item-price">Price: $15.99</p>
                   </div>
                   <div class="box">   
-                    <img src="image4.jpg" width="300" height="300" />
-                     <p id="item-name">MUTTON BIRYANI FULL BOX</p>
+                    <img src="image4.jpg" width="270" height="270" />
+                     <p id="item-name"><b>mutton biryani full box</b></p>
                       <p id="item-price">Price: $17.99</p>
                     </div>
                     <div class="box">
-                      <img src="images5.jpg" width="300" height="300" />
-                       <p id="item-name">VEG BIRYANI FULL BOX</p>
+                      <img src="images5.jpg" width="270" height="270" />
+                       <p id="item-name"><b>veg biryani single box</b></p>
                         <p id="item-price">Price: $14.99</p>
                       </div>
                       <div class="box">
-                        <img src="images6.jpg" width="300" height="300" />
-                         <p id="item-name">VEG BIRYANI SINGLE BOX</p>
+                        <img src="images6.jpg" width="270" height="270" />
+                         <p id="item-name"><b>veg biryani full box</b></p>
                           <p id="item-price">Price: $9.99</p>
                         </div>
                         <div class="box">
-                          <img src="image9.jpg" width="300" height="300" />
-                           <p id="item-name">BEEF BIRYANI</p>
-                            <p id="item-price">Price: $14.99</p>
-                          </div>
+                          <img src="image9.jpg" width="270" height="270" />
+                           <p id="item-name"><b>beef biryani</b></p>
+                            <p id="item-price">Price: $14.99</b></p>
+                        </div>
                           <div class="box">
-                          <img src="image8.jpg" width="300" height="300" />
-                           <p id="item-name">MINT SAUCE/RAITA</p>
+                          <img src="image8.jpg" width="270" height="270" />
+                           <p id="item-name"><b>mint sauce/raita</b></p>
                             <p id="item-price">Price: $0.79</p>
                           </div>      
                  </div>
-               
-                </body>
-                </html>
+               </div>
+    </body>
+</html>
