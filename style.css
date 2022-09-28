@@ -1,6 +1,15 @@
-html,
-body {
-  margin: 0;
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+
+<style>
+body  {
+margin: 0;
   padding: 0;
 }
 html {
@@ -11,29 +20,29 @@ body {
   width: 90%;
   min-width: 800px;
   margin: 0 auto;
-  color: aqua;
+ 
 }
 
 h1 {
   font-family: "Cinzel Decorative", cursive;
-  color: red;
-}
-h1 {
   font-size: 6rem;
   text-align: center;
-  text-shadow: 4px 4px 13px black;
+  text-shadow: 2px 2px 8px #FF0000;
 }
+  
+
 h2 {
   font-size: 5rem;
   text-align: left;
-  color: purple;
+  text-shadow: 2px 2px 8px #FF0000;
+  
 }
 
 header {
   margin-bottom: 8px;
   display: flex;
-  flex-flow: row wrap;
-  color: red;
+  flex-flow: row wrap; 
+  padding-top: 0px;
 }
 
 .firstL {
@@ -41,17 +50,17 @@ header {
 }
 
 .secondL {
-  padding-left: 40px;
+  padding-left: 100px;
 }
 .thirdL {
-  padding-left: 70px;
+  padding-left: 140px;
 }
 .lastL {
-  padding-left: 100px;
+  padding-left: 175px;
 }
 
 body > * {
-  padding: 7%;
+  padding: 2%;
 }
 
 main header nav aside {
@@ -60,13 +69,14 @@ main header nav aside {
 }
 
 h1 {
-  flex: 5;
+  flex: 2;
   text-transform: uppercase;
+  padding-top: 0px;
 }
 header img {
   display: block;
-  height: 60px;
-  padding-top: 20.15px;
+  height: 20px;
+  padding-top: 5.15px;
 }
 nav {
   height: 50px;
@@ -78,12 +88,14 @@ nav ul {
   list-style-type: none;
   flex: 2;
   display: flex;
-  color: blue;
+ 
 }
 nav li {
   display: inline;
   text-align: center;
   flex: 1;
+  
+  
 }
 nav a,
 nav span {
@@ -92,10 +104,15 @@ nav span {
   height: 3rem;
   line-height: 1.7;
   text-transform: uppercase;
-  text-decoration: none;
+ 
 }
 main {
   display: flex;
+  padding-top: 45px;
+}
+.gridContainer{
+  padding-left: 85px;
+  line-height: 80px;
 }
 
 aside {
@@ -111,74 +128,143 @@ aside a {
 }
 
 aside img {
-  max-width: 100%;
+  max-width: 130%;
 }
-
 
 .imgbox {
   float: right;
   border: 1px dotted rgb(195, 72, 72);
   margin: 0px 0px 0px 10px;
-}
-.h-primary center {
-  font-size: 3.8rem;
-  padding: 5px;
-}
-.services {
-  max-width: 1000px;
-  margin: auto;
-  background-color: rgb(35, 36, 36);
-  overflow: auto;
-}
-.box {
-  border: 4px solid brown;
-  padding: 12px;
-  margin-left: 30px;
-  margin-right: 40px;
-  float: left;
-  border-radius: 5px;
-  width: 46%;
-}
-.box image {
-  display: inline;
-  padding: 7px;
-  margin: 0px auto;
-  padding: 3px;
-}   
-.Services {
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 20px;
-  color: black;
-  padding-top: 70px;
+  padding-top:4px;
+  padding-right: 4px;
+} 
+</style>
+
+<style>
+.Service-item h1{
+  text-transform: uppercase;
+  font-size: 40px;
+  color:brown;
+  text-shadow: 0 0 3px #FF0000;
 }
 
-.item {
- 
-  font-size: larger;
-  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
-  letter-spacing: 3px;
-  line-height: 20px;
-  padding-top: 20px;
-  
-}
-
-.item1 {
-  float: right;
-  font-size: larger;
-  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
-  letter-spacing: 2px;
-  line-height: 30px;
-  padding-top: 20px;
-}
-span {
+.Service-item1 h1{
+  text-transform: uppercase;
+  padding-left: 30%;
+  padding-top: 25px;
+  position: absolute;
+  top: 85px;
   color: red;
+  text-shadow: 0 0 3px #FF0000;
+  font-size: 35px;
 }
 
+.Service-item h1{
+  text-transform: uppercase;
+  font-size: 40px;
+  color:brown;
+  text-shadow: 0 0 3px #FF0000;
+}
+
+.Service-item1 h1{
+  text-transform: uppercase;
+  padding-left: 30%;
+  padding-top: 25px;
+  position: absolute;
+  top: 85px;
+  color: red;
+  text-shadow: 0 0 3px #FF0000;
+  font-size: 35px;
+}
+
+       .services {
+        display: grid;
+        grid-template-columns: repeat(2, 250px);
+        gap: 100px;
+        justify-content: center;
+        padding-top: 7%;  
+
+       
+      }
+      .box { 
+        display: grid;  
+        border: 5px solid brown;
+        padding: 1px;
+        padding-bottom: 10px;
+        width: 108%;
+        border-radius: 3px;
+        text-transform: uppercase;
+        font-size: 20px;
+       
+      }
+      .box >p{
+        font-size: large;
+      }
+      </style>
+
+<style>
+    body{
+      margin: 0;
+      padding: 0;
+    }
+
+    .navbar{
+      position: relative;
+      padding-top: 10px;
+      padding-left: 119px;
+      text-transform: uppercase;
+      font-size: x-large;
+      text-shadow: 2px 2px 8px #FF0000;
+           
+    }
+    .navbar1{
+      position:absolute;
+      right: 250px;
+      text-transform: uppercase;
+      top: 5px;
+      padding-top: 10px;
+      color: rgb(12, 2, 2);
+    }
+    
+  
+  .item {
+    position: relative;
+    font-size: xx-large;
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+    letter-spacing: 3px;
+    line-height: 40px;
+    padding-top: 15px;
+    padding-left: 40px;
+  }
+  
+  .item1 {
+    float: right;
+    font-size: xx-large;
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+    letter-spacing: 4px;
+    line-height: 52px;
+    padding-top: 41px;
+    position:absolute;
+    right: 40px;
+    top: 95px;
+    
+  }
+  span {
+    color: red;
+  }
+  </style>
+
+<style>
+  .header{
+    text-transform: uppercase;
+    font-size: xx-large;
+    text-align: center;
+  }
   .container{
   background-color:beige ;
   display: flex;
   justify-content: space-between;
-  padding-top: 5px;
+  padding-top: 10%;
   width: 100%;
   margin: 3rem auto;
   height: 500px;
@@ -192,11 +278,12 @@ span {
   margin:0px auto;
 
 }
-.content h2{
+.content h1{
   font-size: 60px;
-  color:rgb(158, 76, 229);
+  text-shadow: 2px 2px 8px #FF0000;
   text-align: center;
-  padding-top: 1px;
+  padding-top: 5px;
+  text-transform: uppercase;
 
 }
 .content p{
@@ -206,5 +293,149 @@ span {
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   text-align: justify;
 }
+</style>
+<style>
+p {
+    font-size: 50px;
+    text-shadow: 2px 2px 8px #FF0000;
+    text-transform: uppercase;
+}
+
+.design {
+    padding-top: 5px;
+    line-height: 8px;
+}
+
+.formdesign {
+    font-size: 30px;
+
+}
+
+#id {
+    color: #000;
+    text-shadow: 2px 2px 8px #FF0000;
+
+}
+
+.formdesign input {
+    width: 30%;
+    padding: 25px 20px;
+    border: 2px solid rgb(25, 10, 231);
+    margin: 15px;
+    border-radius: 4px;
+    font-size: 15px;
+}
+
+.buttn {
+    border-radius: 15px;
+    width: 100px;
+    height: 50px;
+    font-size: 25px;
+    cursor: pointer;
+}
+
+.info {
+    padding-top: 10px;
+    margin-top: -40px;
+    text-align: right;
+    font-size: 20px;
+    text-indent: 10%;
+    position: absolute;
+    right: 20px;
+    top: 150px;
+    line-height: normal;
+}
+    .info>h1 {
+        text-shadow: 2px 2px 8px #FF0000;
+    }
+
+    i {
+      cursor: pointer;
+    }
+    </style>
+    <style>
+    .navbar {
+      background-color: grey;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      position: relative;
+      text-transform: uppercase;
+ 
+
+    }
+
+    .cart {
+      color: rgb(242, 13, 40);
+      font-size: 30px;
+      padding: 5px;
+    }
+
+    .cart-Amt {
+      font-size: 20px;
+      background-color: rgb(43, 226, 80);
+      position: absolute;
+      top: -12px;
+      right: 0;
+    }
+
+    .order {
+
+      display: grid;
+      grid-template-columns: repeat(2, 219px);
+      gap: 25px;
+      justify-content: center;
+      padding-bottom: 5px;
+    }
+
+    @media (max-width: 600px) {
+      .order {
+        grid-template-columns: repeat(2, 219px);
+      }
+    }
+
+    @media (max-width: 300px) {
+      .order {
+        grid-template-columns: repeat(1, 219px);
+      }
+    }
+
+
+    .order-item {
+      border: 3px solid black;
+      border-radius: 2px;
+      padding: 5px 5px;
+      text-transform: capitalize;
+    }
+
+    .order-detail {
+      padding: 2px;
+    }
+
+    .order-price {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .button {
+      display: flex;
+      flex-direction: row;
+      gap: 8px;
+      font-size: 16px;
+    }
+
+    .bi-dash {
+      color: red;
+    }
+
+    .bi-plus-lg {
+      color: greenyellow;
+    }
+
+
+</style>
+</head>
 </body>
 </html>
