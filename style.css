@@ -1,19 +1,340 @@
-<!DOCTYPE html>
- <html lang="en">
+<style>
+  body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+  }
+  html {
+    scroll-behavior: smooth;
+    font-size: 10px;
+    background-color: rgb(207, 201, 201);
+  }
+  body {
+    width: 100%;
+    min-width: 800px;
+    margin: 0 auto;
+   
+  }
+  
+  h1 {
+    font-family: "Cinzel Decorative", cursive;
+    font-size: 6rem;
+    text-align: center;
+    text-shadow: 2px 2px 8px #FF0000;
+    padding: 0%;
+  }
+    
+  
+  h2 {
+    font-size: 5rem;
+    text-align: left;
+    text-shadow: 2px 2px 8px #FF0000;
+    
+  }
+  
+  header {
+    margin-bottom: 8px;
+    display: flex;
+    flex-flow: row wrap; 
+    padding-top: 0px;
+  }
+  
+  .firstL {
+    grid-column-start: 1;
+  }
+  
+  .secondL {
+    padding-left: 100px;
+  }
+  .thirdL {
+    padding-left: 140px;
+  }
+  .lastL {
+    padding-left: 185px;
+  }
+  
+  body > * {
+    padding: 0%;
+  }
+  
+  main header nav aside {
+    background-color: rgb(183, 174, 174);
+    padding: 2%;
+  }
+  
+  h1 {
+    flex: 2;
+    text-transform: uppercase;
+    padding-top: 0px;
+  }
+  header img {
+    display: block;
+    height: 20px;
+    padding-top: 5.15px;
+  }
+  nav {
+    height: 50px;
+    flex: 100%;
+    display: flex;
+  }
+  nav ul {
+    padding: 9px;
+    list-style-type: none;
+    flex: 6;
+    display: flex;
+    color: blue;
+   
+  }
+  nav li {
+    display: inline;
+    text-align: center;
+    flex: 4;
+    color: blue;   
+    
+  }
+  nav a,
+  nav span {
+    display: inline-block;
+    font-size: 3rem;
+    height: 3rem;
+    line-height: 1.7;
+    text-transform: uppercase;
+   
+  }
+  main {
+    display: flex;
+    padding-top: 45px;
+  }
+  .gridContainer{
+    padding-left: 105px;
+    line-height: 80px;
+  }
+  
+  aside {
+    flex: 1;
+    margin-left: 20px;
+    padding: 1px;
+  }
+  
+  aside a {
+    display: block;
+    float: left;
+    width: 500%;
+  }
+  
+  aside img {
+    max-width: 130%;
+  }
+  
+  .imgbox {
+    float: right;
+    border: 1px dotted rgb(195, 72, 72);
+    margin: 0px 0px 0px 10px;
+    padding-top:4px;
+    padding-right: 60px;
+  } 
 
- <head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Shopping Cart</title>
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
- </head>
+  
+  #menu-services {
 
-  <style>
+              margin-top: 128px;
+              height: 10vh ;
+            }
+     
+            h1{
+              text-transform: uppercase;
+              
+              color: rgb(27, 25, 25);
+              text-shadow: 0 0 3px #FF0000;
+              font-size: 45px;
+            }
+    
+                   #Service-item {
+                    display: grid;
+                    grid-template-columns: repeat(2, 250px);
+                    gap: 5%;
+                    justify-content: center;
+                    padding-top: 7%;  
+                    margin-bottom: 70px;
+                   
+                  }
+                  .box { 
+                    display: grid;
+                    flex-wrap: wrap;
+                    box-sizing: border-box;
+                    padding-left: 80px;
+                    padding-bottom: 2px;
+                    width: 18%;
+                 
+                    justify-content: center;
+                    gap: 5px;
+                   
+                  }
+                  img {
+                    box-sizing: border-box;
+                    border: 6px solid red;
+                  }
+                  .box >p{
+                    font-size: large;
+                  }
+
+
+                  #services1 {
+                     margin-top: 150px;
+                     height: fit-content;
+                   }
+        
+                  .services1 h1{
+                      text-align: center;
+                     
+                      text-transform: uppercase;
+                      font-size: 40px;
+                      text-shadow: 0 0 3px #FF0000;
+                            
+                   } 
+
+        #navbar {
+          position: relative;
+          padding-top: 130px;
+          padding-left: 119px;
+          text-transform: uppercase;
+          font-size: x-large;
+          color: rgb(12, 2, 2);
+          text-shadow: 2px 2px 8px #FF0000;
+          
+         
+        }
+         #navbar1 {
+          position: absolute;
+          right: 250px;
+          text-transform: uppercase;
+          top: 20%;
+          color: rgb(12, 2, 2);
+          text-shadow: 2px 2px 8px #FF0000;
+          font-size:x-large
+        }
+
+      
+      .item {
+        position: relative;
+        font-size: xx-large;
+        font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+        letter-spacing: 3px;
+        line-height: 40px;
+        padding-top: 1px;
+        padding-left: 40px;
+      }
+      
+      .item1 {
+        float: right;
+        font-size:xx-large;
+        font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+        letter-spacing: 4px;
+        line-height: 52px;
+       
+        position:absolute;
+        right: 40px;
+        top: 32%;
+        
+      }
+      span {
+        color: red;
+      }
+
+ 
+      #container{
+          
+          display: flex;
+          padding-top: 8%;
+          width: 100%;
+          margin-top: 35px;
+      }
+          .img_cont{
+          padding-top: 27px;
+          padding-left: 5px;
+          height: 250px;
+          float:left;
+
+
+          }
+
+          .content {
+            padding-top: 15px;
+          }
+
+          .content h1{
+          font-size: 40px;
+          color:black;
+          padding-top: 0px;
+
+          }
+          .content p{
+          gap: 15px;
+          padding-left: 20px;
+          color: black;
+          font-size:x-large;
+          font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+          text-align: justify;
+          line-height: 48px;
+          }
+
+                  p {
+                      font-size: 50px;
+                      text-transform: uppercase;
+                  }
+          
+                  .design {
+                      padding-top: 5px;
+                      line-height: 8px;
+                  }
+          
+                  .formdesign {
+                      font-size: 30px;
+          
+                  }
+          
+                  #id {
+                      color: #000;
+                      
+          
+                  }
+          
+                  .formdesign input {
+                      width: 30%;
+                      padding: 25px 20px;
+                      border: 2px solid rgb(25, 10, 231);
+                      margin: 15px;
+                      border-radius: 4px;
+                      font-size: 15px;
+                  }
+          
+                  .button {
+                      border-radius: 15px;
+                      width: 100px;
+                      height: 50px;
+                      font-size: 25px;
+                      cursor: pointer;
+                  }
+          
+                  .info {
+                      padding-top: 10px;
+                      margin-top: -40px;
+                      text-align: right;
+                      font-size: 20px;
+                      text-indent: 10%;
+                      position: absolute;
+                      right: 20px;
+                      top: 150px;
+                      line-height: normal;
+                  }
+          
+                  
+         
     i {
       cursor: pointer;
     }
+   
+
 
     .navbar {
       background-color: grey;
@@ -22,14 +343,12 @@
       justify-content: space-between;
       position: relative;
       text-transform: uppercase;
-    }
+ 
 
-    h1{
-      color: rgb(21, 7, 15);
     }
 
     .cart {
-      color: rgb(75, 3, 11);
+      color: rgb(242, 13, 40);
       font-size: 30px;
       padding: 5px;
     }
@@ -41,7 +360,6 @@
       top: -12px;
       right: 0;
     }
-
 
     .order {
 
@@ -87,7 +405,7 @@
       display: flex;
       flex-direction: row;
       gap: 8px;
-      font-size: 16px;
+      font-size: 22px;
     }
 
     .bi-dash {
@@ -97,66 +415,7 @@
     .bi-plus-lg {
       color: greenyellow;
     }
-    .text-center {
-      text-align: center;
-      margin-bottom: 20px;
-    }
-    .HomeBtn,
-    .checkout,
-    .removeAll {
-      background-color: black;
-      color: white;
-      padding: 4px;
-      border-radius: 3px;
-      cursor: pointer;
-      margin-top: 7px;
 
-    }
-    .checkout{
-      background-color: green;
-    }
-    .removeAll {
-      background-color: red;
-    }
 
-    .bi-x-lg{
-      color:red;
-      font-weight: bold;
-
-    }
-    .shopping-cart{
-      display: grid;
-      grid-template-columns: repeat(1, 219px);
-      justify-content: center;
-      gap: 10px;
-      
-    }
-    .cart-item {
-      border: 2px solid brown;
-      border-radius: 10px;
-      display: flex;
-      padding: 3px;
-      margin: 25px 0px 2px 2px;
-    }
-    .title-price-x {
-      align-items: top;
-      display: flex;
-      justify-content:space-between;
-      height: 70px;
-
-    }
-
-    .title-price {
-      display: flex;
-      align-items: center;
-      gap: 10px;
-    }
-    .cart-item-price {
-      background-color:black;
-      color: white;
-      border-radius: 4px;
-      padding: 2px 0px;
-   
-    }  
-  </style>
+</style>
 </html>
