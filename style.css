@@ -1,359 +1,20 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="UTF-8" />
-<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+ <html lang="en">
 
-<style>
-body  {
-margin: 0;
-  padding: 0;
-}
-html {
-  font-size: 10px;
-  background-color: white;
-}
-body {
-  width: 90%;
-  min-width: 800px;
-  margin: 0 auto;
- 
-}
+ <head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Shopping Cart</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+ </head>
 
-h1 {
-  font-family: "Cinzel Decorative", cursive;
-  font-size: 6rem;
-  text-align: center;
-  text-shadow: 2px 2px 8px #FF0000;
-}
-  
-
-h2 {
-  font-size: 5rem;
-  text-align: left;
-  text-shadow: 2px 2px 8px #FF0000;
-  
-}
-
-header {
-  margin-bottom: 8px;
-  display: flex;
-  flex-flow: row wrap; 
-  padding-top: 0px;
-}
-
-.firstL {
-  grid-column-start: 1;
-}
-
-.secondL {
-  padding-left: 100px;
-}
-.thirdL {
-  padding-left: 140px;
-}
-.lastL {
-  padding-left: 175px;
-}
-
-body > * {
-  padding: 2%;
-}
-
-main header nav aside {
-  background-color: white;
-  padding: 2%;
-}
-
-h1 {
-  flex: 2;
-  text-transform: uppercase;
-  padding-top: 0px;
-}
-header img {
-  display: block;
-  height: 20px;
-  padding-top: 5.15px;
-}
-nav {
-  height: 50px;
-  flex: 100%;
-  display: flex;
-}
-nav ul {
-  padding: 5;
-  list-style-type: none;
-  flex: 2;
-  display: flex;
- 
-}
-nav li {
-  display: inline;
-  text-align: center;
-  flex: 1;
-  
-  
-}
-nav a,
-nav span {
-  display: inline-block;
-  font-size: 3rem;
-  height: 3rem;
-  line-height: 1.7;
-  text-transform: uppercase;
- 
-}
-main {
-  display: flex;
-  padding-top: 45px;
-}
-.gridContainer{
-  padding-left: 85px;
-  line-height: 80px;
-}
-
-aside {
-  flex: 1;
-  margin-left: 20px;
-  padding: 1px;
-}
-
-aside a {
-  display: block;
-  float: left;
-  width: 500%;
-}
-
-aside img {
-  max-width: 130%;
-}
-
-.imgbox {
-  float: right;
-  border: 1px dotted rgb(195, 72, 72);
-  margin: 0px 0px 0px 10px;
-  padding-top:4px;
-  padding-right: 4px;
-} 
-</style>
-
-<style>
-.Service-item h1{
-  text-transform: uppercase;
-  font-size: 40px;
-  color:brown;
-  text-shadow: 0 0 3px #FF0000;
-}
-
-.Service-item1 h1{
-  text-transform: uppercase;
-  padding-left: 30%;
-  padding-top: 25px;
-  position: absolute;
-  top: 85px;
-  color: red;
-  text-shadow: 0 0 3px #FF0000;
-  font-size: 35px;
-}
-
-.Service-item h1{
-  text-transform: uppercase;
-  font-size: 40px;
-  color:brown;
-  text-shadow: 0 0 3px #FF0000;
-}
-
-.Service-item1 h1{
-  text-transform: uppercase;
-  padding-left: 30%;
-  padding-top: 25px;
-  position: absolute;
-  top: 85px;
-  color: red;
-  text-shadow: 0 0 3px #FF0000;
-  font-size: 35px;
-}
-
-       .services {
-        display: grid;
-        grid-template-columns: repeat(2, 250px);
-        gap: 100px;
-        justify-content: center;
-        padding-top: 7%;  
-
-       
-      }
-      .box { 
-        display: grid;  
-        border: 5px solid brown;
-        padding: 1px;
-        padding-bottom: 10px;
-        width: 108%;
-        border-radius: 3px;
-        text-transform: uppercase;
-        font-size: 20px;
-       
-      }
-      .box >p{
-        font-size: large;
-      }
-      </style>
-
-<style>
-    body{
-      margin: 0;
-      padding: 0;
-    }
-
-    .navbar{
-      position: relative;
-      padding-top: 10px;
-      padding-left: 119px;
-      text-transform: uppercase;
-      font-size: x-large;
-      text-shadow: 2px 2px 8px #FF0000;
-           
-    }
-    .navbar1{
-      position:absolute;
-      right: 250px;
-      text-transform: uppercase;
-      top: 5px;
-      padding-top: 10px;
-      color: rgb(12, 2, 2);
-    }
-    
-  
-  .item {
-    position: relative;
-    font-size: xx-large;
-    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
-    letter-spacing: 3px;
-    line-height: 40px;
-    padding-top: 15px;
-    padding-left: 40px;
-  }
-  
-  .item1 {
-    float: right;
-    font-size: xx-large;
-    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
-    letter-spacing: 4px;
-    line-height: 52px;
-    padding-top: 41px;
-    position:absolute;
-    right: 40px;
-    top: 95px;
-    
-  }
-  span {
-    color: red;
-  }
-  </style>
-
-<style>
-  .header{
-    text-transform: uppercase;
-    font-size: xx-large;
-    text-align: center;
-  }
-  .container{
-  background-color:beige ;
-  display: flex;
-  justify-content: space-between;
-  padding-top: 10%;
-  width: 100%;
-  margin: 3rem auto;
-  height: 500px;
-}
-.img_cont{
-  padding-top: 50px;
-  padding-left: 5px;
-  height: 250px;
-  float:left;
-  width: max-content;
-  margin:0px auto;
-
-}
-.content h1{
-  font-size: 60px;
-  text-shadow: 2px 2px 8px #FF0000;
-  text-align: center;
-  padding-top: 5px;
-  text-transform: uppercase;
-
-}
-.content p{
-  padding-left: 20px;
-  color: black;
-  font-size:xx-large;
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-  text-align: justify;
-}
-</style>
-<style>
-p {
-    font-size: 50px;
-    text-shadow: 2px 2px 8px #FF0000;
-    text-transform: uppercase;
-}
-
-.design {
-    padding-top: 5px;
-    line-height: 8px;
-}
-
-.formdesign {
-    font-size: 30px;
-
-}
-
-#id {
-    color: #000;
-    text-shadow: 2px 2px 8px #FF0000;
-
-}
-
-.formdesign input {
-    width: 30%;
-    padding: 25px 20px;
-    border: 2px solid rgb(25, 10, 231);
-    margin: 15px;
-    border-radius: 4px;
-    font-size: 15px;
-}
-
-.buttn {
-    border-radius: 15px;
-    width: 100px;
-    height: 50px;
-    font-size: 25px;
-    cursor: pointer;
-}
-
-.info {
-    padding-top: 10px;
-    margin-top: -40px;
-    text-align: right;
-    font-size: 20px;
-    text-indent: 10%;
-    position: absolute;
-    right: 20px;
-    top: 150px;
-    line-height: normal;
-}
-    .info>h1 {
-        text-shadow: 2px 2px 8px #FF0000;
-    }
-
+  <style>
     i {
       cursor: pointer;
     }
-    </style>
-    <style>
+
     .navbar {
       background-color: grey;
       display: flex;
@@ -361,12 +22,14 @@ p {
       justify-content: space-between;
       position: relative;
       text-transform: uppercase;
- 
+    }
 
+    h1{
+      color: rgb(21, 7, 15);
     }
 
     .cart {
-      color: rgb(242, 13, 40);
+      color: rgb(75, 3, 11);
       font-size: 30px;
       padding: 5px;
     }
@@ -378,6 +41,7 @@ p {
       top: -12px;
       right: 0;
     }
+
 
     .order {
 
@@ -433,9 +97,66 @@ p {
     .bi-plus-lg {
       color: greenyellow;
     }
+    .text-center {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+    .HomeBtn,
+    .checkout,
+    .removeAll {
+      background-color: black;
+      color: white;
+      padding: 4px;
+      border-radius: 3px;
+      cursor: pointer;
+      margin-top: 7px;
 
+    }
+    .checkout{
+      background-color: green;
+    }
+    .removeAll {
+      background-color: red;
+    }
 
-</style>
-</head>
-</body>
+    .bi-x-lg{
+      color:red;
+      font-weight: bold;
+
+    }
+    .shopping-cart{
+      display: grid;
+      grid-template-columns: repeat(1, 219px);
+      justify-content: center;
+      gap: 10px;
+      
+    }
+    .cart-item {
+      border: 2px solid brown;
+      border-radius: 10px;
+      display: flex;
+      padding: 3px;
+      margin: 25px 0px 2px 2px;
+    }
+    .title-price-x {
+      align-items: top;
+      display: flex;
+      justify-content:space-between;
+      height: 70px;
+
+    }
+
+    .title-price {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+    .cart-item-price {
+      background-color:black;
+      color: white;
+      border-radius: 4px;
+      padding: 2px 0px;
+   
+    }  
+  </style>
 </html>
