@@ -1,35 +1,47 @@
 
 
+
 <!DOCTYPE html>
 <html lang="en">
     <head>
       <meta charset="UTF-8" />
       <meta http-equiv="X-UA-Compatible" content="IE=edge" />
       <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+     
       <style>
 
-        body{
-          margin: 0;
-          padding: 0;
-        }
+         .services1 h1{
+        text-align: center;
+        padding: 30px;
+        text-transform: uppercase;
+        font-size: 40px;
+        text-shadow: 0 0 3px #FF0000;
+              
+      } 
 
-        .navbar{
+        #navbar {
           position: relative;
-          padding-top: 10px;
+          padding-top: 0%;
           padding-left: 119px;
           text-transform: uppercase;
           font-size: x-large;
+          color: rgb(12, 2, 2);
           text-shadow: 2px 2px 8px #FF0000;
           
          
         }
-        .navbar1{
-          position:absolute;
+         #navbar1 {
+          position: absolute;
           right: 250px;
           text-transform: uppercase;
-          top: 5px;
-          padding-top: 10px;
+          top: 20%;
           color: rgb(12, 2, 2);
+          text-shadow: 2px 2px 8px #FF0000;
+          font-size:x-large
+        }
+
+        #Services1 {
+          padding-top: 50px;
         }
         
       
@@ -39,38 +51,42 @@
         font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
         letter-spacing: 3px;
         line-height: 40px;
-        padding-top: 15px;
+        padding-top: 1px;
         padding-left: 40px;
       }
       
       .item1 {
         float: right;
-        font-size: xx-large;
+        font-size:xx-large;
         font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
         letter-spacing: 4px;
         line-height: 52px;
-        padding-top: 41px;
+       
         position:absolute;
         right: 40px;
-        top: 95px;
+        top: 32%;
         
       }
       span {
         color: red;
       }
+
       
   </style>
   </head>
   
-  <body> 
-  <div class="navbar">
+  <section class="services1" id="SERVICES">
+    <h1><b>services</b></h1> 
+  </section>
+  <section id="navbar">
    <h1><b>appetizers</b></h1>
-  <div class="navbar1">
+  </section>
+  <section id="navbar1">
   <h1><b>desserts</b></h1>  
-  </div> 
-  </div>
+  </section> 
 
- <div class="Services">
+
+ <section id="Services">
   <div class="item">
 <ol>
 <li>LAMB SEEKH KABABS--  <span>$31.99-$59.99</span> </li>
@@ -98,7 +114,7 @@
 <li>MOTICHOOR LADDU-- <span>$5.99</span> </li>
 </ol>
 </div>
-</div>   
+</section>   
 
 </body>
 </html>
