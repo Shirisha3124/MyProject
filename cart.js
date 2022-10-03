@@ -20,6 +20,7 @@ let generateCartItems = () => {
         .map((x) => { 
         let { id, item } = x;
         let search = orderItemsData.find((y) => y.id === id) || [];
+       // console.log("search",parseInt(search.price.replace(/[$]/g, '')))
         return `
          <div class="cart-item">
          <img height="140" width="90" src=${search.img} alt="" />
@@ -38,8 +39,8 @@ let generateCartItems = () => {
            <div id=${id} class="quantity">${item}</div>
            <i onclick="increment(${id})" class="bi bi-plus-lg"></i>  
            </div>
-           
-           <h3>${item * search.price}</h3> 
+          
+           <h3>$ ${item * Number(search.price.replace(/[$]/g, ''))}</h3> 
         </div> 
       </div>
         `;
@@ -115,13 +116,13 @@ let TotalAmount = () => {
         let amount = basket.map((x) => {
         let { item, id } = x; 
         let search = orderItemsData.find((y) => y.id === id) || [];
-        return item * search.price;
+        return item * Number(search.price.replace(/[$]/g, ''));
     })
 
     .reduce((x,y) => x + y, 0);
     
     label.innerHTML = `
-    <h2>Total Amount : ${amount}</h2>
+    <h2>TotalAmount : ${amount}</h2>
     <button class="checkout">Checkout</button>
     <button onclick="clearCart()" class="removeAll">Clear Cart</button>
     `;
